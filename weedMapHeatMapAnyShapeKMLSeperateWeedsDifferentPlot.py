@@ -91,6 +91,8 @@ dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.mi
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SOLAR, dbc_css])
 
+server = app.server
+
 @app.callback(
     Output('dataTable', 'data'),
     Input('Date Selector', 'value'),
@@ -261,6 +263,5 @@ def update_figure(type, date, sliderON):
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug = True)
+    app.run_server(dev_tools_hot_reload = False)
 
-#dev_tools_hot_reload = False,
