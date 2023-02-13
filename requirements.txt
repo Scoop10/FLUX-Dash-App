@@ -2,7 +2,6 @@ dash == 2.6.0
 pandas
 pykml
 datetime
-attrgetter
 plotly.express
 plotly.graph_objects
 dash_bootstrap_components
