@@ -1,0 +1,9 @@
+dash == 2.6.0
+pandas
+pykml
+datetime
+operator
+plotly.express
+plotly.graph_objects
+dash_bootstrap_components
+dash_bootstrap_templates
